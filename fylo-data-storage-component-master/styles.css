@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* ### Primary  */
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%); 
+    
+    /* ### Neutral  */
+    --Pale-Blue: hsl(243, 100%, 93%); 
+    --Grayish-Blue: hsl(229, 7%, 55%); 
+    --Dark-Blue: hsl(228, 56%, 26%); 
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+main{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/bg-desktop.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: var(--Very-Dark-Blue);
+        max-width: 1100px;
+        height: 80vh;
+        margin: 6rem auto;
+}
+
+.container{
+    display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: -8rem;
+        color: white;
+}
+
+.social-info{
+    display: flex;
+    align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        padding-left: 0;
+}
+
+.fylo{
+    background-color: var(--Dark-Blue);
+    padding: 1.5rem 3rem;
+    border-radius: 0.8rem 6rem 0.8rem 0.8rem;
+}
+
+.doc{
+    background-color: var(--Very-Dark-Blue);
+    padding: 10px 13px;
+    border-radius: 9px;
+    width: 2rem;
+}
+
+.folder{
+    background-color: var(--Very-Dark-Blue);
+    padding: 15px 13px;
+    border-radius: 9px;
+    width: 2rem;
+}
+
+.upload{
+    background-color: var(--Very-Dark-Blue);
+    padding: 15px 13px;
+    border-radius: 9px;
+    width: 2.2rem;
+}
+
+.box2{
+    background-color: var(--Dark-Blue);
+    padding: 2rem 10rem;
+    padding-left: 2rem;
+    position: relative;
+    border-radius: 8px;
+}
+
+.line{
+    width:  auto;
+    height: 9px;
+        position: relative;
+        background-color: var(--Very-Dark-Blue);
+        width: 160%;
+        margin: auto;
+        border-radius: 30px;
+}
+
+.sub-line {
+    height: 8px;
+    position: relative; 
+     background-image: linear-gradient(to right, rgb(226, 104, 104) , rgb(249, 200, 109));
+    width: 75%;
+    border-radius: 30px;
+}
+
+.dot{
+    height: 8px;
+    background-color: var(--Pale-Blue);
+    margin-left: 97%;
+    position: relative;
+    border-radius: 50%;
+    width: 3%;
+}
+
+.box2 p{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.gb{
+position: absolute;
+    /* left: 20px; */
+    right: 30px;
+    top: -35px;
+    background-color: var(--Pale-Blue);
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px ;
+    padding: 8px 20px;
+
+}
+
+.gb p{
+   font-size: 2rem;
+   font-weight: bold;
+   color: var(--Dark-Blue);
+   letter-spacing: 0.1rem;
+}
+
+.gb  span{
+    font-size: 0.6rem;
+    color: var(--Grayish-Blue);
+    text-transform: uppercase;
+    
+}
+
+.item2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    color: var(--Pale-Blue);
+}
+
+.item2 p:last-child{
+    position: relative;
+   left: 150px;
+}
+
+@media (max-width:800px){
+    main{
+       background-image: url(images/bg-mobile.png);
+       background-repeat: no-repeat;
+       background-size: cover;
+       margin: 0.8rem auto;
+       height: 93vh;
+       width: 100vw;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fylo{
+        width: 75%;
+        margin-top: 90px;
+      
+    }
+
+    .gb{
+        position: absolute;
+    top: 110px;
+        right: 200px;
+    }
+}
+
+@media(max-width:353px){
+    main{
+        width: 350px;
+        margin: 2rem auto;
+        height: 500px;
+    }
+}
